@@ -1,0 +1,43 @@
+div{
+    height: 30%;
+    width: 100%;
+    display: flex;
+}
+
+.pokemon-img{
+    max-width: 100%;
+    height: auto;
+}
+
+.div-pokemon-info{
+    height: 5%;
+    flex-direction: column;
+}
+
+.pokemon-id{
+    font-size: 100%;
+    font-weight: bold;
+}
+
+.pokemon-name{
+    font-size: 200%;
+}
+
+.div-choose-another-pokemon{
+    height: 20%;
+}
+
+.btn-choose-another-pokemon{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    border-radius: 40px;
+    padding: 20px;
+    background-color: rgb(46, 137, 255);
+
+    font-size: 150%;
+    color: white;
+    text-align: center;
+    max-width: 350px;
+}
