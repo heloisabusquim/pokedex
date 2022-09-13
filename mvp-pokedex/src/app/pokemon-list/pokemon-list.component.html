@@ -1,6 +1,6 @@
 <section>
     <div class="div-pokemon-img">
-        <img class="pokemon-img" src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/{{ generateId(100,151) }}.png"> 
+        <img class="pokemon-img" src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/{{ generateId(1,151) }}.png"> 
         <!-- teste provisório para ver se o random funciona - a imagem troca entre os pokemon 100 e 151 -->
     </div>
     <div class="div-pokemon-info">
@@ -8,6 +8,6 @@
         <p class="pokemon-name">Bulbasaur</p> <!--hardcoded - it shall be changed with API-->
     </div>
     <div>
-        <a class="btn-choose-another-pokemon">Choose another Pokemon!</a>
+        <a class="btn-choose-another-pokemon" (click)="generateId(1,151)">Choose another Pokemon!</a>
     </div>
 </section>

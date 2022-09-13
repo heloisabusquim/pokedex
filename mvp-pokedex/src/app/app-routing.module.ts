@@ -6,7 +6,7 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   { path: 'home', component: HomePageComponent },
   { path: '', component: HomePageComponent },
-  { path: ':id.png', component: PokemonListComponent}
+  { path: 'pokemon-list', component: PokemonListComponent }
 ];
 
 @NgModule({

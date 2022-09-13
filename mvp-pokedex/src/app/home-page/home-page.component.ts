@@ -9,10 +9,6 @@ export class HomePageComponent implements OnInit {
 
   constructor() { }
 
-  choosePokemon(){
-    
-  }
-
   ngOnInit(): void {
   }
 
