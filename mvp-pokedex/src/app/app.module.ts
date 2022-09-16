@@ -6,19 +6,22 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { PokemonListComponent } from './pokemon-list/pokemon-list.component';
+import { TesteComponent } from './teste/teste.component';
+import { PokemonDataService } from './services/pokemon-data.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
-    PokemonListComponent
+    PokemonListComponent,
+    TesteComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [PokemonDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
