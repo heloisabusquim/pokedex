@@ -14,6 +14,7 @@ export class PokemonListComponent implements OnInit {
   pokemonId: string;
   pokemonImg: string;
   isLoading: boolean = true;
+  
 
   constructor(private pokemonService: PokemonDataService) {}
   

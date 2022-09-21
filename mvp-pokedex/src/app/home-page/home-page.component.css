@@ -1,22 +1,24 @@
-.div-choose-first-pokemon{
+.div-choose-pokemon{
     display: flex;
     align-content: center;
     justify-content: center;
+    height: 100%
 }
 
-.btn-choose-first-pokemon{
+.btn-choose-pokemon{
     display: flex;
     align-content: center;
     justify-content: center;
+    margin: auto;
+    width: 100%;
 
     border-radius: 40px;
-    padding: 20px;
+    padding: 30px;
     background-color: rgb(46, 137, 255);
 
-    font-size: 200%;
+    font-size: 20px;
     color: white;
     text-align: center;
-    max-width: 400px;
-  
+    text-decoration: none;
+    max-width: 250px;
 }
-

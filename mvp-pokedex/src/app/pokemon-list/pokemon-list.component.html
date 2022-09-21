@@ -16,11 +16,11 @@
 
 <div class="colored-background" *ngIf="!isLoading;else loading">
     <p class="pokemon-id">{{ pokemonId }}</p> 
-    <p class="pokemon-name">{{ pokemonName | uppercase }}</p>
+    <p class="pokemon-name">{{ pokemonName | titlecase }}</p>
     <img class="pokemon-img" src="{{ pokemonImg }}">            
 </div>
 <div class="white-background">
     <p class="pokemon-details">More pokemon infos will be here soon!</p>
-    <a class="btn-choose-pokemon" (click)="getPokemonById()">Choose Pokemon</a>
+    <a class="btn-choose-pokemon" (click)="getPokemonById()">Choose me another Pokemon</a>
 </div>
 <ng-template #loading>Loading...</ng-template>
