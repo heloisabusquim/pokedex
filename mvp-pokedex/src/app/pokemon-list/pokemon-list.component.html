@@ -1,15 +1,26 @@
-<section>
-    <div *ngIf="!isLoading;else loading">
+<!-- <section>
+    <div class="div-pokemon" *ngIf="!isLoading;else loading">
         <div class="div-pokemon-img">
-            <img class="pokemon-img" src="{{ pokemonImg }}"> 
+            <img class="pokemon-img" src="{{ pokemonImg }}">
         </div>
         <div class="div-pokemon-info">
             <p class="pokemon-id">{{ pokemonId }}</p> 
             <p class="pokemon-name">{{ pokemonName }}</p> 
         </div>
         <div>
-            <a class="btn-choose-another-pokemon" (click)="getPokemonById()">Choose another Pokemon!</a>
+            <a class="btn-choose-pokemon" (click)="getPokemonById()">Choose another Pokemon!</a>
         </div>
     </div>
     <ng-template #loading>Loading...</ng-template>
-</section>
+</section> -->
+
+<div class="colored-background" *ngIf="!isLoading;else loading">
+    <p class="pokemon-id">{{ pokemonId }}</p> 
+    <p class="pokemon-name">{{ pokemonName | uppercase }}</p>
+    <img class="pokemon-img" src="{{ pokemonImg }}">            
+</div>
+<div class="white-background">
+    <p class="pokemon-details">More pokemon infos will be here soon!</p>
+    <a class="btn-choose-pokemon" (click)="getPokemonById()">Choose Pokemon</a>
+</div>
+<ng-template #loading>Loading...</ng-template>

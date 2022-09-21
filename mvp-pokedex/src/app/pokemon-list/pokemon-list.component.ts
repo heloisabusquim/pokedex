@@ -1,10 +1,6 @@
-import { IPokemon } from './../models/IPokemon';
-import { pokemonDTO } from './../models/pokemonDTO';
 import { PokemonDataService } from './../services/pokemon-data.service';
-import { AfterViewInit, ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-
+import { Component, OnInit } from '@angular/core';
 import { finalize } from 'rxjs/operators';
-
 
 @Component({
   selector: 'app-pokemon-list',
@@ -26,6 +22,7 @@ export class PokemonListComponent implements OnInit {
     this.randomNumber = result;
 
     this.pokemonId = `#${this.randomNumber.toString().padStart(3, "0")}`;
+    
   }
 
   ngOnInit(): void {

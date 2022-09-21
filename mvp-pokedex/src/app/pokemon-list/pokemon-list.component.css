@@ -1,16 +1,24 @@
-div{
+/* div{
     height: 30%;
     width: 100%;
     display: flex;
 }
 
+.div-pokemon {
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
 .pokemon-img{
+    align-content: center;
     max-width: 100%;
-    height: auto;
+    height: 70%;
+    width: 100%
 }
 
 .div-pokemon-info{
-    height: 5%;
+    height: 10%;
     flex-direction: column;
 }
 
@@ -27,17 +35,79 @@ div{
     height: 20%;
 }
 
-.btn-choose-another-pokemon{
+.btn-choose-pokemon{
     display: flex;
     align-content: center;
     justify-content: center;
 
     border-radius: 40px;
-    padding: 20px;
+    padding: 30px;
     background-color: rgb(46, 137, 255);
 
-    font-size: 150%;
+    font-size: 20px;
     color: white;
     text-align: center;
     max-width: 350px;
+} */
+
+p, img, a {
+    background-color: transparent;
+}
+
+.colored-background {
+    background-color:antiquewhite;
+    align-items: center;
+    min-height: 50%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.pokemon-id {
+    margin: 80px 0 0 0;
+    font-size: 16px;
+    font-weight: bold;    
+}
+
+.pokemon-name {
+    margin: 20px 0 20px 0;
+    font-size: 40px;
+}
+
+.pokemon-img {
+    margin: auto 0 -50px 0;
+    justify-self: flex-end;
+    align-content: center;
+    max-width: 250px;
+}
+
+.white-background {
+    background-color: white;
+    border-radius: 60px 60px 0 0;
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 50%
+}
+
+.pokemon-detaisl {
+    margin: auto atuo 20px auto;
+}
+
+.btn-choose-pokemon{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: auto auto 40px auto;
+    width: 100%;
+
+    border-radius: 40px;
+    padding: 30px;
+    background-color: rgb(46, 137, 255);
+
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    max-width: 250px;
 }

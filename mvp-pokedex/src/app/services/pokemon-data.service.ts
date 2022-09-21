@@ -1,7 +1,6 @@
 import { environment } from './../../environments/environment';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { IPokemon } from '../models/IPokemon';
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +9,6 @@ export class PokemonDataService {
 
   urlLimit = environment.urlLimit;
   baseUrl = environment.baseUrl;
-  dbPikachu = "http://localhost:3000/pikachu"
 
   constructor(private http: HttpClient) { }
 
