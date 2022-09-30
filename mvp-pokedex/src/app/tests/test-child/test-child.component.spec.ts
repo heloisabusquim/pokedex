@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RandomButtonComponent } from './random-button.component';
+import { TestChildComponent } from './test-child.component';
 
-describe('RandomButtonComponent', () => {
-  let component: RandomButtonComponent;
-  let fixture: ComponentFixture<RandomButtonComponent>;
+describe('TestChildComponent', () => {
+  let component: TestChildComponent;
+  let fixture: ComponentFixture<TestChildComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ RandomButtonComponent ]
+      declarations: [ TestChildComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RandomButtonComponent);
+    fixture = TestBed.createComponent(TestChildComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

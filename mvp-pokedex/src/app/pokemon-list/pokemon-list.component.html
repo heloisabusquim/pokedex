@@ -1,26 +1,22 @@
-<!-- <section>
-    <div class="div-pokemon" *ngIf="!isLoading;else loading">
-        <div class="div-pokemon-img">
-            <img class="pokemon-img" src="{{ pokemonImg }}">
-        </div>
-        <div class="div-pokemon-info">
-            <p class="pokemon-id">{{ pokemonId }}</p> 
-            <p class="pokemon-name">{{ pokemonName }}</p> 
-        </div>
-        <div>
-            <a class="btn-choose-pokemon" (click)="getPokemonById()">Choose another Pokemon!</a>
-        </div>
-    </div>
-    <ng-template #loading>Loading...</ng-template>
-</section> -->
-
 <div class="colored-background" *ngIf="!isLoading;else loading">
     <p class="pokemon-id">{{ pokemonId }}</p> 
     <p class="pokemon-name">{{ pokemonName | titlecase }}</p>
+    <div class="pokemon-chips">
+        <p class="chips" *ngFor="let chips of pokemonChips">{{ chips.type.name | titlecase }}</p>
+    </div>
     <img class="pokemon-img" src="{{ pokemonImg }}">            
 </div>
 <div class="white-background">
-    <p class="pokemon-details">More pokemon infos will be here soon!</p>
-    <a class="btn-choose-pokemon" (click)="getPokemonById()">Choose me another Pokemon</a>
+    <mat-tab-group class="tab-container" animationDuration="0ms">
+        <mat-tab class="tabs" label="Abilities">
+            <p *ngFor="let ability of pokemonAbilities"> {{ ability.ability.name | titlecase }}</p>
+        </mat-tab>
+        <mat-tab label="Moves">
+        <p class="tabs" *ngFor="let moves of pokemonMoves">{{ moves.move.name | titlecase }} </p>
+        </mat-tab>
+    </mat-tab-group>
+    <!-- </div> -->
+    <br><br>
+    <a class="btn-choose-pokemon" (click)="getPokemonDataById()">Choose me another Pokemon</a>
 </div>
 <ng-template #loading>Loading...</ng-template>

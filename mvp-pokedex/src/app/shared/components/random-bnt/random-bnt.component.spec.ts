@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PokemonInfoComponent } from './pokemon-info.component';
+import { RandomBntComponent } from './random-bnt.component';
 
-describe('PokemonInfoComponent', () => {
-  let component: PokemonInfoComponent;
-  let fixture: ComponentFixture<PokemonInfoComponent>;
+describe('RandomBntComponent', () => {
+  let component: RandomBntComponent;
+  let fixture: ComponentFixture<RandomBntComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PokemonInfoComponent ]
+      declarations: [ RandomBntComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PokemonInfoComponent);
+    fixture = TestBed.createComponent(RandomBntComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

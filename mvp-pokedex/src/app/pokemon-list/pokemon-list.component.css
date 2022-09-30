@@ -1,56 +1,4 @@
-/* div{
-    height: 30%;
-    width: 100%;
-    display: flex;
-}
-
-.div-pokemon {
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-}
-
-.pokemon-img{
-    align-content: center;
-    max-width: 100%;
-    height: 70%;
-    width: 100%
-}
-
-.div-pokemon-info{
-    height: 10%;
-    flex-direction: column;
-}
-
-.pokemon-id{
-    font-size: 100%;
-    font-weight: bold;
-}
-
-.pokemon-name{
-    font-size: 200%;
-}
-
-.div-choose-another-pokemon{
-    height: 20%;
-}
-
-.btn-choose-pokemon{
-    display: flex;
-    align-content: center;
-    justify-content: center;
-
-    border-radius: 40px;
-    padding: 30px;
-    background-color: rgb(46, 137, 255);
-
-    font-size: 20px;
-    color: white;
-    text-align: center;
-    max-width: 350px;
-} */
-
-p, img, a {
+p, img, a, h2 {
     background-color: transparent;
 }
 
@@ -74,11 +22,27 @@ p, img, a {
     font-size: 40px;
 }
 
+.pokemon-chips {
+    margin: 10px 0 10px 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.chips {
+    margin: 0 5px 0 5px;
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 40%;
+    flex-direction: row;
+}
+
+
 .pokemon-img {
     margin: auto 0 -50px 0;
     justify-self: flex-end;
     align-content: center;
     max-width: 250px;
+    height: 200px;
 }
 
 .white-background {
@@ -91,8 +55,8 @@ p, img, a {
     height: 50%
 }
 
-.pokemon-detaisl {
-    margin: auto atuo 20px auto;
+.pokemon-details {
+    margin: 80px auto 20px auto;
 }
 
 .btn-choose-pokemon{
@@ -109,5 +73,36 @@ p, img, a {
     font-size: 20px;
     color: white;
     text-align: center;
-    max-width: 250px;
+    max-width: 350px;
 }
+
+.tab-container {
+    margin: 80px 0 0 0;
+}
+  
+  ::ng-deep .mat-tab-list .mat-tab-labels {
+  color:black;
+  background-color: white;
+  }
+  
+  mat-tab-group{
+    background-color: white;
+  }
+
+  ::ng-deep .mat-tab-label {
+    font-weight: bold;
+    background-color: white;
+  }
+
+  ::ng-deep .mat-tab-label-content {
+    background-color: white;
+  }
+
+  ::ng-deep .mat-tab-body-content {
+    margin: 20px 0 0 0;
+    background-color: white;
+  }
+
+  ::ng-deep .mat-tab-body {
+    background-color: white;
+  }

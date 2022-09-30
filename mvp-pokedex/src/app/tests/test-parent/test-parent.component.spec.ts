@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PokemonNavbarComponent } from './pokemon-navbar.component';
+import { TestParentComponent } from './test-parent.component';
 
-describe('PokemonNavbarComponent', () => {
-  let component: PokemonNavbarComponent;
-  let fixture: ComponentFixture<PokemonNavbarComponent>;
+describe('TestParentComponent', () => {
+  let component: TestParentComponent;
+  let fixture: ComponentFixture<TestParentComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PokemonNavbarComponent ]
+      declarations: [ TestParentComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PokemonNavbarComponent);
+    fixture = TestBed.createComponent(TestParentComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -16,9 +16,8 @@ export class PokemonDataService {
     return this.http.get<any>(`${this.urlLimit}`)
   }
 
-  getPokemonById(id: number){
+  getPokemonDataById(id: number){
     const url: string =`${this.baseUrl}/${id}`;
-    console.log(url);
     return this.http.get<any>(url)
   }
   
